@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles/estilo.css">
+</head>
+<body>
+    <section class="container">
+        <h1>REGISTRO DE PERSONAS</h1>
+        <div class="form-container">
+            <form class="form" action="" id="dataForm">
+                <img src="src/img/persona1.jpeg" alt="" width="100px" height="100px">
+                <div class="nomApe">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" size="10px" name="nombre" id="nombre" required>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" size="10px" name="apellido" id="apellido" required>
+                </div>
+                <div class="formGroup">
+                    <label for="rut">RUT</label>
+                    <input type="text" name="rut" id="rut">
+                </div>
+                <div class="radio">
+                    <label for="nac_chile">Nacionalidad</label>
+                    <input type="radio" name="nac" value="Chile" id="nac_chile"> Chileno
+                    <input type="radio" name="nac" value="Ext" id="nac_ext"> Extranjero
+                    <br>
+                </div>
+                <div class="formGroup">
+                    <label for="dir">Dirrección</label>
+                    <input type="text" name="dir" id="dir">
+                </div>
+                <div class="formGroup">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <button type="submit" class="btnGuardar">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <section class="container">
+        <h2>Datos Ingresados</h2>
+        <pre id="result"></pre>
+    </section>
+    <script src="src/scripts/Form.js"></script>
+</body>
+</html>
